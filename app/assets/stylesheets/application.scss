@@ -111,3 +111,41 @@ form.button_to {
 .text-danger {
   color: #f38792 !important;
 }
+
+
+.count-div {
+  width: 50%;
+  height: 10rem;
+  border-radius: 20px;
+  border: 3px solid rgba(0, 130, 29, 0.7);
+  background-color: #9bc8a4;
+    p {
+      font-size: 2em;
+      font-weight: 700;
+
+    }
+    a, a:hover, a:focus, a:active {
+      
+      color: inherit;
+ }
+   
+}
+
+.dash-head {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.count-container {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.count-div-l {
+  margin-right: 2%;
+  margin-left: 10%;
+}
+.count-div-r {
+  margin-right: 10%;
+  margin-left: 2%;
+}

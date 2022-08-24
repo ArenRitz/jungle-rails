@@ -1,2 +1,12 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class='dash-head' >Store Status</h1>
+
+  <div class='d-flex flex-row count-container'>
+    <div class='d-flex flex-column justify-content-around count-div count-div-l text-center '>
+      <%= link_to 'Product Count', controller: 'admin/products', class: 'test-c' %>
+      <p>  <%= @num_of_products  %> </p>
+    </div>
+    <div class='d-flex flex-column justify-content-around count-div text-center count-div-r'>
+        <%= link_to 'Category Count', controller: 'admin/products' %>
+       <p> <%= @num_of_categories %> </p>
+    </div>
+  </div
