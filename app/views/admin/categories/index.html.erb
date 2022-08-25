@@ -1,0 +1,14 @@
+<h1>Admin &raquo; All Categories</h1>
+
+ <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2" class="text-center">Categories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @categories.each do |item| %>
+          <%= render 'item', category: item[:name] %>
+        <% end %>
+      </tbody>
+    </table>
