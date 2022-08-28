@@ -157,3 +157,18 @@ form.button_to {
 .bot-btn {
   margin-top: 1rem;
 }
+
+
+.form-container {
+
+
+  border-radius: 20px;
+  border: 3px solid rgba(0, 130, 29, 0.7);
+  background-color: #9bc8a4;
+  .span-label {
+    margin-left: 3rem;
+    display: inline-block;
+    width: 20%;
+  }
+
+}
