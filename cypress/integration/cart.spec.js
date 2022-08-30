@@ -1,0 +1,15 @@
+describe('Add to cart', () => {
+  it('should add a product to the cart', () => {
+    cy.visit('/')
+    cy.get(".add-to-cart").first().click( {force: true} )
+    cy.get("#my-cart").should('contain', '(1)')
+    cy.get(".add-to-cart").first().click( {force: true} )
+    cy.get("#my-cart").should('contain', '(1)')
+    cy.get("#my-cart").click()
+    cy.get(".btn-danger").first().should('contain', '-')
+    cy.get(".btn-danger").first().click()
+    cy.get(".product-quantity").first().should('contain', '1')
+    cy.get(".btn-danger").first().click()
+    cy.get("#my-cart").should('contain', '(0)')
+  })
+})
